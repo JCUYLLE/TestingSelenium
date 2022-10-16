@@ -30,3 +30,5 @@ Gehuurde film my movies
     Click element    ${MYMOVIES}
     Sleep  2s
     Page Should Contain    VFW
+
+

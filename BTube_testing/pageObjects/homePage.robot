@@ -27,3 +27,7 @@ Go To Profile
     Sleep    5s
     Click Element    ${PROFILE_LINK}
     Sleep    5s
+
+Go To homePage
+      Sleep    5s
+      Click Element  xpath://img[@id='Logo']
