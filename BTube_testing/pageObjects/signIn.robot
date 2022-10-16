@@ -17,11 +17,11 @@ ${password}=              P@ssW0rd01
 
 Log in with account
     Go To Signin Page
-    Sleep  5s
+    Sleep  1s
     Input Text  ${EMAIL_LOGIN_TXT}  ${emailadres}
-    Sleep  5s
+    Sleep  1s
     Input Text  ${PASSWORD_LOGIN_TXT}  ${password}
-    Sleep   5s
+    Sleep   1s
     Click Element   ${LOGIN_BTN}
-    Sleep   5s
+    Sleep   1s
 
