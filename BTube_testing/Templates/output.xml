@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221012 20:07:45.938" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\jolyn\IdeaProjects\TestBtube\BTube_testing\tests">
+<suite id="s1-s1" name="01 Registration" source="C:\Users\jolyn\IdeaProjects\TestBtube\BTube_testing\tests\01_registration.robot">
+<kw name="Open My Website" library="basePage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221012 20:07:46.171" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221012 20:07:46.171" endtime="20221012 20:07:48.134"/>
+</kw>
+<status status="PASS" starttime="20221012 20:07:46.170" endtime="20221012 20:07:48.134"/>
+</kw>
+<test id="s1-s1-t1" name="Een profiel toon de correcte voor- en achternaam" line="11">
+<kw name="Open My Website" library="basePage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221012 20:07:48.157" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221012 20:07:48.157" endtime="20221012 20:07:50.303"/>
+</kw>
+<status status="PASS" starttime="20221012 20:07:48.156" endtime="20221012 20:07:50.303"/>
+</kw>
+<kw name="Log in with account">
+<msg timestamp="20221012 20:07:50.309" level="FAIL">No keyword with name 'Log in with account' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20221012 20:07:50.308" endtime="20221012 20:07:50.309"/>
+</kw>
+<kw name="Sleep 10s">
+<status status="NOT RUN" starttime="20221012 20:07:50.314" endtime="20221012 20:07:50.314"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='#/profile']//button[@id='OrdersPageButton']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 20:07:50.314" endtime="20221012 20:07:50.314"/>
+</kw>
+<kw name="Sleep 15s">
+<status status="NOT RUN" starttime="20221012 20:07:50.318" endtime="20221012 20:07:50.318"/>
+</kw>
+<status status="FAIL" starttime="20221012 20:07:48.135" endtime="20221012 20:07:50.319">No keyword with name 'Log in with account' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221012 20:07:50.320" endtime="20221012 20:07:52.908"/>
+</kw>
+<status status="FAIL" starttime="20221012 20:07:45.961" endtime="20221012 20:07:52.908"/>
+</suite>
+<status status="FAIL" starttime="20221012 20:07:45.940" endtime="20221012 20:07:52.911"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="01 Registration">Tests.01 Registration</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
