@@ -1,16 +1,20 @@
 *** Settings ***
 Resource            ../pageObjects/homePage.robot
 Resource            ../pageObjects/basePage.robot
-Force Tags          MyTag
+
 
 
 *** Variables ***
 ${EMAIL_LOGIN_TXT}=     xpath://input[@id='SignInEmail']
+${EMAIL_LOGIN_TXT_WRONG}=     xpath://input[@id='SignInEmail']
 ${PASSWORD_LOGIN_TXT}=    xpath://input[@id='SignInPassword']
+${PASSWORD_LOGIN_TXT_WRONG}=    xpath://input[@id='SignInPassword']
 ${LOGIN_BTN}=             xpath://*[@id="SignInButtonComplete"]
 
 ${emailadres}=            jolynn.cuylle@gmail.com
+${emailadresVerkeerd}=            jolynn.cuylle@grotmail.com
 ${password}=              P@ssW0rd01
+${passwordVerkeerd}=              P@ssW0rd0000001
 
 *** Keywords ***
 
