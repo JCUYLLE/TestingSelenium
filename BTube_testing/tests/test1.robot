@@ -19,7 +19,7 @@ ${passwordVerkeerd}=              P@ssW0rd0000001
 ${emailadresVerkeerd}=            jolynn.cuylle@grotmail.com
 *** Test Cases ***
 
-Login foute username
+Login foute username (8)
     Go To Signin Page
     Sleep  0.5s
     Input Text  ${EMAIL_LOGIN_TXT_WRONG}  ${emailadresVerkeerd}
@@ -30,7 +30,7 @@ Login foute username
     Sleep   0.5s
     Page Should Contain    This email has not been registered.
 
-Login fout passwoord
+Login fout passwoord (9)
         Go To Signin Page
         Sleep  0.5s
         Input Text  ${EMAIL_LOGIN_TXT}  ${emailadres}
@@ -42,17 +42,17 @@ Login fout passwoord
         Page Should Contain    Email or password incorrect.
 
 
-Log In With Account
+Log In With Account (2)
     Go To Signin Page
     Log In With Account
-    Location Should Be    https://brightshopapp.herokuapp.com/#/
+
 
 
 Login naam correct
     Go To Profile
     Element Should Contain    locator=${first_name_element}    expected=${name}
     Element Should Contain    locator=${last_name_element}    expected=${lastname}
-
+    Location Should Be    https://brightshopapp.herokuapp.com/#/
 
 
 

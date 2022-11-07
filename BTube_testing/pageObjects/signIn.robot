@@ -21,11 +21,11 @@ ${passwordVerkeerd}=              P@ssW0rd0000001
 
 Log in with account
     Go To Signin Page
-    Sleep  1s
+    Sleep  0.5s
     Input Text  ${EMAIL_LOGIN_TXT}  ${emailadres}
-    Sleep  1s
+    Sleep  0.5s
     Input Text  ${PASSWORD_LOGIN_TXT}  ${password}
-    Sleep   1s
+    Sleep   0.5s
     Click Element   ${LOGIN_BTN}
-    Sleep   1s
+    Sleep   0.5s
 

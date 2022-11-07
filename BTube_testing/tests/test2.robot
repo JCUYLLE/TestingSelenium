@@ -13,7 +13,7 @@ ${ELEMENT_THING}=    xpath://div[@class='css-1idhddb']//div[1]
 
 
 *** Test cases ***
-Gehuurde film my movies
+Gehuurde film my movies (3)
     Log in with account
     Sleep  2s
     Click Element    xpath://div[@id='Action Movies']//img[@id='624779']
